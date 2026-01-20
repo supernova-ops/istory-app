@@ -63,7 +63,7 @@ jobs:
             application:
               name: USER-SERVICE
             jwt:
-              issuer: ich0103@naver.com
+              issuer: spuernova050103@gmail.com
               secret_key: study-springboot
           management:
             endpoints:
@@ -106,7 +106,7 @@ jobs:
       - name: 10.서비스 리포지토리 체크아웃
         uses: actions/checkout@v4
         with:
-          repository: ich0103/istory-service   # 바꾸기
+          repository: supernova050103/istory-service   # 바꾸기
           ref: main # 바꾸기
           path: .
           token: ${{ secrets.PAT }}
@@ -132,7 +132,7 @@ jobs:
 
           git commit -am "Update image tag to ${{ env.DOCKER_TAG }}"
 
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/ich0103/istory-service.git
+          git remote set-url origin https://${{ secrets.PAT }}@github.com/supernova050103/istory-service.git
 
           git push origin main
 
