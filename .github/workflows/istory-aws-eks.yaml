@@ -106,7 +106,7 @@ jobs:
       - name: 10.서비스 리포지토리 체크아웃
         uses: actions/checkout@v4
         with:
-          repository: spuernova-ops/istory-service   # 바꾸기
+          repository: supernova-ops/istory-service   # 바꾸기
           ref: main # 바꾸기
           path: .
           token: ${{ secrets.PAT }}
